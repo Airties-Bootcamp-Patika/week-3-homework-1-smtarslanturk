@@ -1,0 +1,33 @@
+ 1. Statik kod analizi: Sonarqube 
+ - Statik koc analizi vasitasiyla yazilimlarin bug, zaafiyetleri vb.. bulunmasi saglanmaktadir. Bu yazilim araclarindan birine ornek olarak sonarqube ornek verilebilir.
+ - Sonarqube yazilimi uzanti olarak yazilimcilara gercek zamanli geri bildirimler verebildigi gibi sonar server kurulup ardindan sonarqube kurulumu yapilarak da kullanimi gerceklestirilebilir. 
+
+ 2. Kubernetes yapısı
+- Kubernetes Google tarafından GO dilinde geliştirilmiş Cloud Native Computing Foundation tarafından desteklenen mevcut konteyner haline getirilmiş uygulamalarınızı otomatik deploy etmek, sayılarını arttırıp azaltmak gibi işlemler ile birlikte yönetmenizi sağlayan bir Konteyner kümeleme (container cluster) aracıdır.
+- Kubernetes yapisinda, master ve worker dedikleri node’lardan oluşuyor. Bu worker dediğimiz node’lar içerisinde pod’lar ve pod’ların içerisinde konteyner’larımız bulunmaktadır.Bu yapı kendi içinde overlay dediğimiz bir network ile haberleşiyor.
+- Master node içerisinde 4 tane temel yapıtaşı vardır. Bunlar;
+API Server
+Controller Manager
+Scheduler
+Etcd
+- Node yapitaslari ise asagidaki sekildeki gibidir. 
+Kubelet
+Kube-Proxy
+Pod
+Container Engine
+
+3. Orchestration yapısı
+- Orchestration yapisi aslinda bir grubun yonetilmesi olarak dusunulebilir. DevOps perspektifinden bakacak olursakta bu grup kavramini containerlarla bagdastirabiliriz. Containerlarin skale edilmesi, yonetilmesi gibi cluster islemlerinin yonetilmesine verilen isim olarak dusunebilliriz. 
+
+4. npm nedir ve niçin kullanılır? 
+- npm, tarayıcılar ve sunucular gibi online platformlarla etkileşime geçmeye yardımcı olan bir komut satırı aracıdır. Bu araç bir proje gerçekleştirmek için gereken paket yüklemek ve kaldırmakta, sürüm ve bağımlılık yönetiminde yardımcı olur. apt, brew gibi paket yoneticileri gibi dusunulebilir. 
+
+5. Agile-Scrum nedir? 
+- Scrum; Agile proje yönetim metodolojilerinden biridir. Kompleks yazılım süreçlerinin yönetilmesi için kullanılır. Bunu yaparken bütünü parçalayan; tekrara dayalı bir yöntem izler. Düzenli geri bildirim ve planlamalarla hedefe ulaşmayı sağlar.
+- Agile metodolijisi, yazılım projelerindeki giderleri azaltmayı hedefler. 
+- Agile metodolojisinde çalışan ve kullanışlı bir yazılım projesi oluşturmak ön plana çıkmaktadır. Müşterilerden alınan geri dönüşler bu yöntem için oldukça önemlidir. 
+- Scrum 3 temel üzerine oturtulmuştur:
+Şeffaflık
+Kontrol edilebilme
+Uyumluluk
+- Scrum, bir projenin şeffaf şekilde yönetilmesini savunur. Projenin her aşaması, hem çalışanlar hem de müşteriler tarafından bilinmelidir. Böylece müşterinin talep edebileceği tüm değişiklikler hızla gerçekleştirilebilir. Müşteri, çalışmanın her aşamasına müdahale ederek hayalindeki yazılıma kavuşacak ve proje başarıyla sonuçlanacaktır.

@@ -1,0 +1,51 @@
+1. İyi bir commit mesajı nasıl olmalıdır?
+- Commit mesajı mümkün oldukça ne yapıldığını anlatan en kısa cümle ile yazılmalı. 
+- Commit mesajlarına emir kipi ile başlanmalı.
+- Emir kipi ile yazdığımız commit başlık mesajının nokta ile bitmemeli.
+- Commit mesajı büyük harf ile başlanılmalı. 
+Genel olarak iyi bir commit mesajinda yukaridaki maddelere dikkat edilmelidir. 
+
+2. FIFO ile LIFO sıralama şeklini araştırınız. 
+- FIFO Yöntemi (İlk Giren İlk Çıkar): FIFO değerleme yöntemi, üretime verilecek olan veya satılacak malların stoklara ilk önce giren mallardan olması gerektiği varsayımına dayanır. Stoktaki malların kullanılma sırası ilk alınan mallardan başlanarak sırasıyla devam eder. Yani stoklara giren mallar yine giriş sırasıyla stoktan çıkarlar.
+FIFO; ingilizce olarak First in First out (İlk Giren İlk Çıkar) kelimelerinin baş harflerinden oluşur.
+
+- LIFO Yöntemi (Son Giren İlk Çıkar): LIFO değerleme yöntemi, üretime verilecek olan veya satılacak malların stoklara son olarak giren mallardan olması gerektiği varsayımına dayanır. Stoktaki malların kullanılma sırası son olarak alınan mallardan başlanarak geriye doğru sırasıyla devam eder. Yani stoklara giren malların giriş sırasının tersine göre stoktan çıkarlar.
+LIFO; ingilizce olarak Last in First out (Son Giren İlk Çıkar) kelimelerinin baş harflerinden oluşur.
+
+LIFO ve FIFO terimleri yazilimda da DB veya bellege ilk giren ilk cikan bilgi olarak dusunulebilir. 
+
+3. git merge rebase farkı, rebase yapısı nedir? 
+- Aslında ikiside aynı kapıya çıkan, amacı iki branchi birleştirmek olan Merge ve Rebase’i birbirinden ayıran nokta amaçlarına nasıl ulaştıkları.
+- master a bir branch i rebase ettiğinizde , branch deki commitlerinizi tek tek alıp master ın sonuna ekleyecektir. Sonuç olarak rebase sonucunda tek bir history oluşturur çünkü tamamlanan işi bir branch ten diğerine aktarır. Bu süreçte istenmeyen history ortadan kalkar.
+- Merge yaptığmızda is yeni bir “ Merge commit” yaratıp iki branchinde tüm history(yapılmış tüm değişiklikleri) sini içerecektir. Master , branch te yapılan tüm değişiklikleri alacak ve entegre edecektir ancak branch in history sinde hiçbir değişiklik olmayacaktır.
+- Eğer tüm değişiklikleri görmek istiyorsanız merge yapmalısınız çünkü merge tüm değişiklikleri olduğu gibi korur. Eğer daha sade, anlaşılabilir ve lineer bir commit history istiyor iseniz rebase sizin için daha yaralı olacaktır. 
+
+4. Sourcetree'yi inceleyiniz.
+- SourceTree, Atlassian'ın çıkarmış olduğu, Git projelerinin yönetimini kolaylaştıran oldukça kullanışlı bir masaüstü uygulamasıdır. Bitbucket başta olmak üzere, Github ve Stash gibi diğer sistemlerdeki Git repository'lerinizi yönetmenizi oldukça kolaylaştıran bir uygulamadır.
+
+5. Interpreter-Complier nedir? Aralarındaki farklar nelerdir?
+- Compiler (Derleyici): Bir dilde yazılmış olan kodu (kaynak kodu / source code) başka bir dilde yazılmış koda, örneğin yüksek seviye bir dilden (high-level programming language) alt seviye bir dile (low-level programming language), dönüştüren araçlardır. Örneğin, C dilinde yazılmış bir kodun PASCAL koduna dönüştürmesi gibi. KLisacasi yuksek seviyeli yazilan dillerin bilgisayarin anlayacagi sekle donusturulmesini sagalyan araclara verilen isimdir. 
+- Derleyiciler tek geçişli (one pass) ve çok geçişli (multi pass) olarak nitelendirilebilirler5. Tek geçişli (one pass) bir derleyici kaynak kodu baştan sona bir defa okur. Çok geçişli (multi pass) derleyiciler ise bu işlemi birkaç defa gerçekleştirirler. 
+- Yorumlayıcı (Interpreter):  Yorumlayıcılar (Interpreter), kodu satır ve/veya bloklar halinde çalıştırırlar ve bir sonraki satır / blokları sırası gelmeden değerlendirmezler. Bu nedenle, sonraki satırdaki hatalar ve kodun bütününü etkileyen iyileştirmeler yorumlayıcılar tarafından yakalanamazlar. Kodu parçalar halinde değerlendirmek amacıyla kullanılırlar. 
+- Interpreters ve compilers birbirine oldukça benzer yapıdadırlar. Aralarındaki temel fark Interpreter kaynak programlama dili ile yazılan komutları doğrudan işlerken, Compiler da o komutları makina diline çevirir.
+- Compiler bir programı bütün olarak alır ve çevirirken; Interpreter programı satır satır çevirir.
+- Compiler’da, Interpreter’e kıyasla hata bulma daha zordur.
+
+6. Sp engine 
+?
+
+7. Servlet
+- Servlet’ler Java dünyasının bir parçasıdır. Nesnesidir. Bir kod bloğunu Java binary kod’lara çevirmeden hemen önceki halidir Servlet. O zaman Java Server Pages ile programımız derlenirken ilk olarak Servlet’e çevrilmekte.
+- Servlet’ler’i istemci ile servlet’ler arasında iletişimini sağlayan Servlet Motor’rları vardır. Bu motorlar dan bir örnek verecek olursam daha önce blog’um da yazdığım Apache Tomcat‘dir. Kullanıcıya sunulan Web sayfalarını önümüze getirir ve isteklerimize cevap verir.
+
+
+
+
+
+
+
+
+
+
+
+

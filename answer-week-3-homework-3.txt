@@ -1,0 +1,30 @@
+1. Ansible nedir? 
+- Ansible bir cok makineyi tek bir makine uzerinden yonetmemizi saglayan otomasyon araclarindan birisidir. Playbook gibi araclari sayesinde metodlar kullanilarak bir cok sunucuya yazilim, network yonetimi saglayabilmektedir. 
+
+2. XML nedir? Açılımı nedir? 
+- XML, yml gibi value key ikilisinden olusan metin isaretleme dilidir. 
+- yaml ile ornek verecek olursak docker-compose filelarin yazilimi kolaylikla gerceklesitirilerek servislerin dockeriza olarak yonetimi saglanip, container teknolojisi kullanimi saglanabilir. 
+- XML acilim olarak eXtensible Markup Language seklinde gecmektedir. 
+
+3. JSON nedir?
+- JSON ("JavaScript Object Notation"); bütün programlama dilleri arasında, yapılandırılmış veri değişimini kolaylaştıran bir metin biçimidir. 
+- JSON sistemi veri depolamak için kullanılan ve çoğunlukla bir sunucu ile istemci arasında olan formata verilen isimdir. JSON dosyaları, XML dosyalarının çok daha basit ve hafif alternatifleri olarak bilinir. Bu format depolanmış olan verinin eş zamansız bir şekilde yüklenmesi adına uyumlu olarak çalışmaktadır.
+
+4. YAML nedir?
+- YAML dil bağımsız bir veri değişim formatıdır. Herhangi bir programlama dili ile oluşturulan nesneler, YAML formatında kolaylıkla temsil edilebilmektedir.
+- Key value ikilisinden olusmaktadir. 
+- Okunabilirligi ve anlasilirligi yuksektir. 
+- Docker-compose dosyalari yaziminda genellikle yaml formati tercih edilmektedir. Dosya uzantisi .yml veya .yaml olarak tercih edilebilmektedir. 
+- Ayrica: YAML formatı  verileri hem key -> value biçiminde hem de dizi biçiminde hem de istenilen derinlikte tutabilmektedir. Bu avantajlı noktalardan bakıldığında, YAML formatı Properties dosyalarına iyi bir alternatif olarak karşımıza çıkmaktadır.
+
+5. http, https, status kodların araştırılması (1 ile başlayanlar, 2 ile başlayanlar...) 
+- Http veya Https server client arasinda veri iletisimini saglayan internet prtokolune verilen isimdir. 
+- Https, http internet protokolunun belli sifreleme yontemleriyle olusturulmus guvenli veri iletim protokolune verilen isimdir. 
+- HTPP: Hyper-Text Transfer Protocol
+- HTTPS: HTTP Secure
+- Http kodlari ise client server arasindaki verilerin iletimi hakkinda client tarafini bilgilendiren kod yapilaridir. 
+1xx: Bilgi amacli gosterilen kodlardir. 
+2xx: Basarim hakkinda bilgi veren kodalrdir. 
+3xx: Yonlendirmeler hakkinda bilgi veren kodlardir. 
+4xx: Istmeci (client) hatalari hakkinda bilgi veren kodlardir. 
+5xx: Sunucu (server) hatalari hakkinda bilgi veren kodlardir. 

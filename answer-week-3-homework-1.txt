@@ -1,0 +1,73 @@
+# week-3-homework-1
+1. Bilgisayarda kaç port vardır?  
+Genelde 65.536 adedi TCP tipinde, 65.536 adedi de UDP tipinde olmak üzere, toplamda 131.072 adet port tanımlanır. Bu portların bir çoğu önceden bazı uygulamalar için ayrılmıştır, mesela 80 nolu TCP portu web uygulamaları için, 23 nolu TCP portu ise telnet uygulamaları için ayrılmıştır.
+
+2. 1024 altı olan portlar neden dış dünyaya açılmıyor? 1024 altı portlarin genel adı nedir? (well-known ports)
+Gunumuzde bir cok isletim sistemi birden fazla programin calismasina izin vermektedir. 
+Sunucu programlari calisan bilgisayarlara birer adres verir buna IP denir. Bu adresler kullanilarak bilgisayarlara baglanti saglanmaktadir. 
+Ulaşılan bu bilgisayar üzerindeki hangi sunucu programdan hizmet almak istendiği belirlemek ise port’lar sayesinde sağlanır.
+Port numralari pozitif sayilardan olusur. 
+Bazı sunucu programları, daha önce herkes tarafından bilinen port’lardan hizmet verirken (örn:telnet->23. port) MSN portu vs bazıları da sunucu programını çalıştıran kişinin türüne ve isteğine göre değişik port’lardan hizmet verir. Dolayisiyla bir servise ulasmak icin IP adresinin yaninda sunucu port numarasinida vermek gerekmektedir. 
+Eger sadece IP adresi verilirse sadece sunucuya baglanti saglanmis olacaktir. Ayrica ilgili port numarasi dolu ise sunucuya baglanti saglanamayacaktir. Bu nedenle tolamda 131072 adet port vardir ve 1024 den kucuk port numaralari ozel yetkilere sahip kullanicilar tarafindan kullanilmaktadir. Buna ornek olarak root kullanicisi verilebilir. 1024 den buyuk olan portlar ise genel kullanima acik olan portlardir. 
+
+3. 80 portu dışarıya 8585 açılmış neden? 
+8585 portu yonlendirilme yapimis olabilir. 
+Burda 8585 portunun ozel bir kullanimi mi var arastirmak lazim.
+80 portu otomatik tanimli portlardan birisidir ve disariya o sekilde acilmasi guvenlik zaafiyeti yaratabilecegi icin 8585 portu uzerinden disariya acilmis olabilir. 
+
+
+4. Nginx nedir? 
+- NGINX, Igor Sysoev tarafından yazılmış performans odaklı ve açık kaynak kodlu bir web sunucusu (server) yazılımıdır. İlk olarak 2002 yılında kullanılmaya başlasa da resmi duyurusu 2004 yılında yapılmıştır. En çok kullanılan web server yazılımlarından biridir. Apache web server ve Litespeed server’a nazaran daha az sistem kaynağı kullanması ve çok daha az CPU kullanımı yapması nedeniyle düşük donanım konfigürasyonuna sahip sunucularda özellikle tercih edilmektedir.
+- Nginx yazilimsal bir web sunucusudur. 
+- Ayrica Nginx, Reverse Proxy (Ters Vekil Sunucusu), Load Balancing (Yük Dengeleyici), API ağ geçidi ve HTTP Caching için de kullanılan çok özellikli bir web sunucusudur.  
+- Nginx acik kaynakli bir web sunucusu yazilimi olamasina ragmen Nginx Plus gibi ucretli versiyonlarida bulunmaktadir.
+- Nginx, sistemde caching yaparak daha onceden girilmis olan verileri on bellekte tutar ve bu verilerin daha hizli sekilde gosterilmesini saglar. Bunun testi Jmeter gibi yazilim test programlari vasitasiyla yapilabilmektedir. 
+- Nginx load ballancing ozelligi sayesinde, fazlaca gelen istekleri birden farkli bilgisayra dagitarak sitemdeki donanimlara asiri yuklenmeyi engellemektedir. 
+- Ayni anda 10000 baglanti istegini isleyebilmektedir. 
+- IP6 desteği mevcuttur.
+- FastCGI, SCGI, uWSGI desteği mevcut.
+- FLV ve MP4 medya oynatıcı desteği vardır.
+- Gzip sıkıştırma imkanı. Hatta lokaldeki verilerin tarayici uzerinden ulasilip indirilmesine de olanak saglamaktadir. 
+- Eş zamanlı bağlantı sınırlaması, birim zamanda istek işleme sınırlaması ve band genişliği sınırlaması imkanı tanıyor.
+- İsim ve IP tabanlı sanal sunucu oluşturma desteği.
+- Web erişimi için kimlik doğrulama desteği.
+- IP tabanlı coğrafi konum desteği. (tabi burda vatandas proxy gibi yazilimlar kullaniyorsa konum bulma islemi yanlis olacaktir.)
+- TSL/SSL SNI ve OCSP stabling desteği.
+- HTTP2 desteği mevcuttur.
+- Web servise max import edilebilecek veri miktari belirlenebilemtkedir. 
+
+Genelde bu ozellikler nginx.conf dosyasi uzerinden ayarlanmakta ve yayginlastirilmaktadir. 
+
+5. Devops nedir? Devops yapısını araştırınız. (sonsuzluk işaretli diagramdaki başlıkların araştırılması) 
+- Devops aslinda bir kulturdur olmasa da olabilir ancak gunumuzde DevOps muhendisinin olmadigi bir yapi dusunulemez. Operasyon ve Devolopment tam ortasinda yazilimin dokundugu her yere onunla beraber dokunan kapsamli bir alandir. 
+- Bunlarin tabiki baslica sebepleri bulunmaktadir. Bunlarinda en basinda sureclerin hizlandirilmasi ve container teknolijileri sayesinde uygulamalarin her yerde ayni sekilde calismasi saglanabilmektedir. 
+- Ayrica DevOps sistemleri sayesinde gunnumuzde cok sik tercih edilmeye baslanan microservis mimarisine de uyum hizli sekilde saglanmaktadir. 
+DevOps Sonsuzluk diagramini incdeleyecek olursak aslinda DevOps un ne olduguna dair daha saglikli yorum yapmis oluruz. 
+
+Plan
+- plan asamasi gelisitricilerin kod yazmaya baslamadan onceki yapmis olduklari yazilimin nelerin uzerine insa edilecegini planladikalari asamadir. 
+- Kisacasi proje baslamadan once milestonlarin belirlendigi asamadir. 
+
+Code
+- Yazilimin bitis saglayacagi surecte kod kisminda sikinti cikmamasi icin bazi araclardan alinacak olan yardimlarin belirlenmesi diyebiliriz genel olarak. 
+Git, Gitlab ornek verilebilir. 
+
+Build
+- DevOps sureclerinin gercek manada devreye girdigi kisimdir. Yazilimci gelistirdigi yazilimi herhangi bir versiyon kontrol sistemine gonderir, bu asama da farkli ekiplerle yazila kodlar merge edilerek yazilimin build isleminin gerceklsitirldigi kisimdir. Tabiki bu islemleri gerceklestiriken de build araclarinadn yardim alinmaktadir. 
+Meaven ornek verilebilir. 
+
+Test 
+- Uygulamalar genellikle manual insanlarin elleriyle yaptiklari testlere tabi tutulabilirler. Ancak cogu zamanda bu surecler devops sureclerine entegre edilebilmektedir. Test surecinin devops pipeline entegrasyonu icin oncelikli olarak testlerin otomasyonun yazilmis olmasi gerekir. Ardindan test surecide otomatiklestirme surecine kattirilmis olmaktadir. 
+JMeter, Selenium ornek verilebilir. 
+
+Release
+- Bir yazilimin production ortami icin yayinlanabileceginin bberlirlendigi alandir. Yazilimin surumunu gostermektedir. 
+Jenkins, CodeShip ornek verilebilebilir. 
+
+Deploy
+- Sistemin son kullaniciyla bulusturuldugu kisimdir. Sistemin canliya alindigi kisimdir. 
+Docker, AWS ornek verilebilir. 
+
+Monitoring
+- Bu kisimda var olan sistemlerin incelenmesinin saglandigi kisimdir. Calisan sistemlerde olasi olabilecek sikintilara karsi sistemlerin guvenlik, cokme gibi durumlara karsi durumlarinin incelendigi kisimdir. Kibana, Datadog gibi toolar ornek olarak gosterilebilir. 
+

@@ -1,0 +1,34 @@
+1. URL, URI 
+- URL, teknik olarak URI’nin başlangıç kısmı yani scheme alanı olarak söylenebilir. URL’nin ardından da URN gelmektedir. Ancak teknik söylem ve yazım kullanımlarında URI yerine URL ifadesi kullanılıyor ve bir sorun olmuyor.
+- URI: Uniform Resource Identifier’in kısaltılmış hali olan URI, internet üzerinde bir kaynağın tam yerine işaret eden (resim veya belge) standart formata uygun bir karakter dizisidir. Kısaca bir URL’nin altında bulunan kaynağın tam yoluna işaret eder. Örneğin https://www.aramamotoru.com/uniform-resource-identifier-nedir-uri-nedir/ bir URI’dir.
+- URL: Uniform Resource Locator’ın kısaltılmış hali olan URL, Türkçe haliyle Birörnek Kaynak Konumlayıcı veya Tekdüzen Kaynak Bulucu şeklinde karşımıza çıkabilir. Aslında gayet basit tanımlı olan URL, internet üzerinde kaynağın yerine işaret eden standart bir formata uygun karakter dizisidir. Örneğin https://indir.com/ bir URL’dir.
+- URI, tam adresi; URL ise kaynagin yerini isaret eder. 
+
+2. DNS yapısı, Domain nedir? Host yapısı
+- DNS, “Domain Name System” tabirinin kısaltmasıdır. Söz konusu terimin Türkçe karşılığı ise “alan isimlendirme sistemi”dir. Bir diğer ifade ile; "DNS, internetin telefon rehberidir" diyebiliriz. DNS, isimlerin IP’ye dönüştürülesi maksadıyla kullanılan ve 256 karaktere kadar da büyüyebilen bir sistemdir. Host, cihazın adını ve İnternet "domain"ini gösterir. DNS, bilgisayar ya da bilgisayar sistemleri ile çalışan cihazların IP’lerini çözerek birbirleri ile haberleşmelerini sağlar.
+- Kullanıcı, bir siteye ulaşmak istediğinde DNS sayesinde bir sitenin, İnternetin hangi alanında bulunduğu kolay bir şekilde çözülür. Bu sayede pratik bir şekilde erişim gerçekleştirebilirsiniz.
+- Doamin ise alan adi olarak gecmektedir. Alan adı, bir Web sitesinin İnternet'teki adı ve adresidir. Bu adres olmadan bir İnternet kullanıcısı Web sitesine sadece IP adresiyle ulaşabilir.
+- Host: Ağ terimlerinde ise host ağa bağlı ana bilgisayar olarak geçmektedir. Sunucu görevi gören bu bilgisayarlar bir hastane ortamında tüm bilgisayarlar client ise bu bilgisayar ana sunucu olduğu için diğer cihazları host etmektedir. 
+- Hosting: Firmalarin internet sitelerini kendi serverlarinda barindiran ve 24 saat ulasilabilir hale getiren firmalara verilen isimdir. 
+
+3. GNU nedir? 
+- GNU, Unix benzeri bir işletim sistemidir. Bu, birçok programın bir arada içerdiği anlamına gelir: Uygulamalar, kütüphaneler, geliştirici araçları, hatta oyunlar. Ocak 1984'te başlayan GNU'nun geliştirilmesi, GNU Projesi olarak bilinir. 
+- “GNU” ismi, “GNU's Not Unix (GNU, Unix Değildir)” ifadesinin özyinelemeli bir kısaltmasıdır.
+- GNU işletim sistemi planı 1983 Eylül'ünde Richard Stallman tarafından duyurulmuş, 1984 Ocak ayında işleyişe başlamıştır. 2021 itibarıyla GNU hâlâ etkin olarak gelişmektedir. 
+- Günümüzde Linux dağıtımı olarak bilinen işletim sistemlerinin neredeyse hepsi aslında GNU İşletim Sistemidir. 
+- Linux çekirdeğini kullanan kullanıcılar sistemlerine genel olarak "Linux" demektedir ancak GNU Projesi "Linux" yerine "GNU/Linux" denmesini önerir. Çünkü Linux, bünyeside GNU araçlarını barındırmaktadır.
+
+4. Git  
+- Git versiyon kontrol sistemi olarak bilinmektedir. 
+- Git kendine ait komutlari bulunmaktadir ve bu sayede grupca gelistirilen yazilimlarin yonetimi rahat bir sekilde saglanabilmektedir. 
+- Git, yazılım geliştirme süreçlerinde kullanılan, hız odaklı, dağıtık çalışan bir sürüm kontrol ve kaynak kod yönetim sistemidir. İlk sürümü Linux çekirdeği'nin geliştirilmesinde kullanılmak üzere 2005 yılında bizzat Linus Torvalds tarafından tasarlanıp geliştirilmiş, 2021 yılı itibarıyla %73 pazar payına ulaşmıştır.
+- github, gitlab gibi internet kod repolari arka tarafinda git versiyon kontrol sistemini kullabmaktadir. 
+
+5. CLİ, GUİ ve farkı 
+- CLI: command line interface olarak bilinmektedir ve terminal ekranini efade etmektedir. Sunuculara yapilan baglantilar aslinda cli uzerinden gorsel arayuzler olmayan sadece komutlar vasitasiyla yonetilen sistemdir. 
+- GUI: Graphical user interface olarak bilinir. bilgisayarlarda işletilen komutlar ve bunların çıktıları yerine simgeler, pencereler, düğmeler ve panellerin tümünü ifade etmek için kullanılan genel addır. Grafiksel kullanıcı arayüzü, bilgisayar kullanıcılarının komut satırı kodlarını ezberlemeden fare, klavye gibi araçlar sayesinde bilgisayarları kontrol etmelerini sağlamıştır.
+- GUI ve CLI farki: Genel olarak farklarini asagidaki gibi siralayabiliriz. 
+Kullanilabilirlik 
+Bellek gereksinimi
+Ozellestirileblirlik
+Esneklik. 

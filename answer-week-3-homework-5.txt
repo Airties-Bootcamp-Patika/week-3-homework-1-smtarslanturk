@@ -1,0 +1,33 @@
+1. Kernel ile Shell farkı
+- Çekirdek ve kabuk arasındaki temel fark, çekirdek, sistemin tüm görevlerini kontrol eden işletim sisteminin çekirdeği iken; kabuk, kullanıcıların çekirdekle iletişim kurmasına izin veren arabirimdir.
+- Çekirdek, bilgisayarın işletim sisteminin çekirdeği olarak işlev gören ve sistemdeki her şey üzerinde denetime sahip olan bir bilgisayar programıdır. Kabuk, işletim sistemi tarafından sağlanan hizmetlere erişmek için arayüz olarak çalışan bir bilgisayar programıdır.
+- Çekirdeğin farklı türleri yoktur. Kabuk, Bourne kabuğu, C kabuğu, Korn Kabuğu, Bourne Yine Kabuğu gibi farklı türlere sahiptir.
+- Çekirdek terimi genellikle işletim sistemini ifade eder.
+
+2. Docker portainer 
+- Docker portainer host isletim sistemine kurulmus olan dockerin gorsel arayuz uzerinden kontrolunu saglayabilmemize olanak saglayan docker desktop gibi bir aractir. 
+- Portainer sayesinde containerlar ayaga kaldirilip, volume atamalari gibi islemler rahtlikla yapilabilmektedir. 
+- Portainer acik kaynak bir program olamsina karsin, ucretli versiyonu da bulunmaktadir. 
+
+3. Cross origin 
+- CORS: Cross-Origin Resource Sharing 
+- CORS (Kökler Arası Kaynak Paylaşımı), bir web sayfası veya web uygulaması üzerinden sunulan kaynaklara (medya, css ve js dosyaları, fontlar, vb.) kaynağın sunulduğu alan adının (hostname) dışından gerçekleştirilen isteklerin yönetimini sağlayan bir işlemdir.
+- CORS bir güvenlik çözümü değildir. CORS pek çok tarayıcı üzerinden kolayca devre dışı bırakılabilmektedir. Genel amacı içerik sahipliğinin korunmak ve sunucu kaynaklarının daha efektif yönetilmesini sağlamaktır.
+- Kisacasi CORS tarayici ve sunucu arasindaki etkilesimin nasil yapilacagini gosterir. 
+
+4. Application server: Tomcat, Wildfly, Nginx 
+- Uygulama sunucusu bir çerçevedir, uygulamaların ne olduklarına veya hangi işlevleri yerine getirdiğine bakılmaksızın çalışabileceği bir ortamdır. 
+- Bir uygulama sunucusu, web tabanlı uygulamalar geliştirebilir ve çalıştırabilir.
+- Uygulama sunucuları birçok avantaj sağlar. Uygulamalarda güncellemeler ve yükseltmeler için daha merkezi bir yaklaşıma izin vererek veri ve kod bütünlüğü sağlarlar. Veri erişimi yönetimini ve kimlik doğrulama sürecini merkezileştirerek güvenlik sağlarlar. Ağ trafiğini sınırlandırarak yoğun kullanım uygulamaları için performans artırılabilir. 
+
+5. CVCS - DVCS 
+- CVCS: Merkezi Sürüm Kontrol Sistemleri (Centralized Version Control Systems)
+- Geliştirici veya bir tasarım ekibinde, bir proje üzerinde ortak çalışma süreci pek çok sorunu de beraberinde getirmektedir. Bu tür bir çalışma sürecindeki dosyaların kontrolleri için daha geniş ölçekli bir çözüm olarak Merkezi Sürüm Kontrol Sistemleri (Centralized Version Control Systems / CVCS) geliştirilmiştir. 
+- CVS, Subversion ve Perforce gibi sistemler Merkezi Sürüm Kontrol Sistemleri için örnek olarak gösterilebilir. Sunucular sürüm kontrolüne alınan bütün dosyaları tutar. Dosyalar bu sunuculardan istemciler vasıtasıyla çekilerek alınırlar (check out).
+- DVCS: Dağıtık Sürüm Kontrol Sistemleri (Distributed Version Control Systems)
+- Dağıtık Sürüm Kontrol Sistemleri (Distributed Version Control Systems / DVCS)’nde istemciler (kullanıcılar) dosyaların yalnızca en son bellek kopyalarını almakla kalmaz, yazılım havuzunu (repository) bütünüyle kopyalarlar. Git, Mercurial, Bazaar ve Darcs gibi örnekleri dağıtık sistemlere örnek olarak ele alabiliriz.
+- Dağıtık sistemlerde üzerinde ortak çalışma yütürülen sunuculardan biri çökerse istemcilerden birinin yazılım havuzu sunucuya geri yüklenerek sistem kurtarılabilmektedir. Her seçip alma (check out) işlemi esasında bütün verinin yedeklenmesiyle sonuçlanır.
+
+
+
+
